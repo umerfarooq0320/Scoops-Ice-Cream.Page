@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,23 +12,27 @@
       theme: {
         extend: {
           colors: {
-            iceCreamPink: '#FFAEC3', // Rich pink canvas background
-            berryRed: '#D11342',     // Deep red/magenta for text and buttons
-            lightBerry: '#FFF0F3',   // Light tint for background hover effects
+            iceCreamPink: '#FFAEC3', 
+            berryRed: '#D11342',     
+            lightBerry: '#FFF0F3',   
           },
           fontFamily: {
-            sans: ['Poppins', 'Arial Black', 'sans-serif'], 
+            sans: ['Poppins', 'Arial Black', 'sans-serif'],
           }
         }
       }
     }
   </script>
 </head>
+
 <body class="bg-white min-h-screen flex items-center justify-center p-4 lg:p-8">
 
-  <main class="w-full max-w-[1440px] bg-iceCreamPink rounded-[40px] p-8 lg:p-14 shadow-2xl relative overflow-hidden min-h-[700px] flex flex-col justify-between">
-    
-    <div class="absolute left-1/2 top-[55%] -translate-x-1/2 -translate-y-1/2 w-[340px] h-[340px] sm:w-[500px] sm:h-[500px] lg:w-[680px] lg:h-[680px] bg-[#FF98B3] rounded-full pointer-events-none z-0"></div>
+  <main
+    class="w-full max-w-[1440px] bg-iceCreamPink rounded-[40px] p-8 lg:p-14 shadow-2xl relative overflow-hidden min-h-[700px] flex flex-col justify-between">
+
+    <div
+      class="absolute left-1/2 top-[55%] -translate-x-1/2 -translate-y-1/2 w-[340px] h-[340px] sm:w-[500px] sm:h-[500px] lg:w-[680px] lg:h-[680px] bg-[#FF98B3] rounded-full pointer-events-none z-0">
+    </div>
 
     <header class="flex justify-between items-center mb-8 lg:mb-12 relative z-10 w-full">
       <div class="flex items-center space-x-2">
@@ -44,9 +49,11 @@
       </nav>
 
       <div>
-        <button class="bg-white text-berryRed font-black px-7 py-3.5 rounded-full flex items-center space-x-2 text-sm hover:bg-lightBerry transition-all shadow-md">
+        <button
+          class="bg-white text-berryRed font-black px-7 py-3.5 rounded-full flex items-center space-x-2 text-sm hover:bg-lightBerry transition-all shadow-md">
           <span>Buy now</span>
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 stroke-[3]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 stroke-[3]" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
           </svg>
         </button>
@@ -54,37 +61,42 @@
     </header>
 
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-y-12 lg:gap-x-6 items-center relative z-10 flex-grow">
-      
+
       <div class="lg:col-span-4 space-y-8 flex flex-col justify-center order-1">
         <div class="space-y-1">
-          <h1 class="text-white font-black text-5xl lg:text-[55px] xl:text-[62px] uppercase leading-[0.95] tracking-wide">
-            Ice cream <br>made with
-          </h1>
-          <h2 class="text-berryRed font-black text-6xl lg:text-[70px] xl:text-[80px] uppercase leading-[0.95] tracking-wider">
-            Passion
-          </h2>
+          <h1
+            class="text-white font-black text-5xl lg:text-[55px] xl:text-[62px] uppercase leading-[0.95] tracking-wide">
+            Ice cream <br>made with</h1>
+          <h2
+            class="text-berryRed font-black text-6xl lg:text-[70px] xl:text-[80px] uppercase leading-[0.95] tracking-wider">
+            Passion</h2>
         </div>
 
         <div class="flex items-center space-x-4">
-          <button class="bg-berryRed text-white font-black px-8 py-3.5 rounded-full text-xs uppercase tracking-wider hover:bg-opacity-90 transition-all shadow-md">
-            Products
-          </button>
-          <button class="bg-white text-berryRed font-black px-8 py-3.5 rounded-full text-xs uppercase tracking-wider hover:bg-lightBerry transition-all shadow-md">
+          <button
+            class="bg-berryRed text-white font-black px-8 py-3.5 rounded-full text-xs uppercase tracking-wider hover:bg-opacity-90 transition-all shadow-md">
+            Products</button>
+          <button
+            class="bg-white text-berryRed font-black px-8 py-3.5 rounded-full text-xs uppercase tracking-wider hover:bg-lightBerry transition-all shadow-md">
             How it's made?
           </button>
         </div>
 
         <div class="pt-4 flex items-end space-x-4 max-w-sm">
           <div class="relative flex-shrink-0">
-            <span class="absolute -top-6 left-0 text-white font-black uppercase text-base leading-none tracking-tight">Bio<br>Eco</span>
+            <span
+              class="absolute -top-6 left-0 text-white font-black uppercase text-base leading-none tracking-tight">Bio<br>Eco</span>
             <img src="./images/jug img.png" alt="Ice Cream Jug" class="w-20 h-auto object-contain drop-shadow-md mt-4">
           </div>
           <div class="space-y-2 pb-1">
             <p class="text-white text-[11px] leading-relaxed font-semibold opacity-90">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.
             </p>
-            <button class="w-7 h-7 bg-white rounded-full flex items-center justify-center text-berryRed shadow-md hover:scale-110 transition-transform">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 stroke-[3]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <button
+              class="w-7 h-7 bg-white rounded-full flex items-center justify-center text-berryRed shadow-md hover:scale-110 transition-transform">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 stroke-[3]" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
               </svg>
             </button>
@@ -92,21 +104,22 @@
         </div>
       </div>
 
-     <div class="lg:col-span-4 flex justify-center items-end relative h-full min-h-[350px] lg:min-h-[500px] order-2 lg:translate-y-10">
-  <img src="./images/icecream cone.png"
-       alt="Stacked Ice Cream Cone"
-       class="w-full max-w-[280px] sm:max-w-[340px] lg:max-w-[400px] h-auto object-contain z-10 relative scale-[1.35] origin-bottom drop-shadow-[0_25px_25px_rgba(0,0,0,0.2)] hover:scale-[1.4] transition-transform duration-300">
-</div>
+      <div
+        class="lg:col-span-4 flex justify-center items-end relative h-full min-h-[350px] lg:min-h-[500px] order-2 lg:translate-y-10">
+        <img src="./images/icecream cone.png" alt="Stacked Ice Cream Cone"
+          class="w-full max-w-[280px] sm:max-w-[340px] lg:max-w-[400px] h-auto object-contain z-10 relative scale-[1.35] origin-bottom drop-shadow-[0_25px_25px_rgba(0,0,0,0.2)] hover:scale-[1.4] transition-transform duration-300">
+      </div>
 
-      <div class="lg:col-span-4 flex flex-col justify-between h-full space-y-12 lg:space-y-0 order-3 self-stretch lg:py-4">
-        
+      <div
+        class="lg:col-span-4 flex flex-col justify-between h-full space-y-12 lg:space-y-0 order-3 self-stretch lg:py-4">
+
         <div class="space-y-8 w-full flex flex-col items-end lg:pr-4">
           <div class="text-right relative pr-3">
             <span class="absolute -right-1 top-0 w-8 h-8 bg-white bg-opacity-30 rounded-full z-0"></span>
             <div class="text-berryRed font-black text-5xl lg:text-6xl leading-none relative z-10">16</div>
             <div class="text-white text-[11px] font-bold uppercase tracking-widest mt-1">Cafes</div>
           </div>
-          
+
           <div class="text-right relative pr-3">
             <span class="absolute -right-1 top-0 w-8 h-8 bg-white bg-opacity-30 rounded-full z-0"></span>
             <div class="text-berryRed font-black text-5xl lg:text-6xl leading-none relative z-10">23</div>
@@ -114,15 +127,13 @@
           </div>
         </div>
 
-       <div class="relative w-full flex justify-end h-[320px]">
+        <div class="relative w-full flex justify-end h-[320px]">
 
-  <div class="absolute right-0 bottom-[-35px] lg:bottom-[-70px] z-10">
-    <img src="./images/oriinal .png"
-         alt="Tasty Ice Cream"
-         class="w-32 lg:w-80 h-auto object-contain">
-  </div>
+          <div class="absolute right-0 bottom-[-35px] lg:bottom-[-70px] z-10">
+            <img src="./images/Go girl.png" alt="Tasty Ice Cream" class="w-32 lg:w-80 h-auto object-contain">
+          </div>
 
-</div>
+        </div>
 
       </div>
 
@@ -130,4 +141,5 @@
 
   </main>
 </body>
+
 </html>
