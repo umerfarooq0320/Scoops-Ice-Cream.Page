@@ -25,13 +25,11 @@
   </script>
 </head>
 
-<body class="bg-white min-h-screen flex items-center justify-center p-4 lg:p-8">
+<body class="bg-white min-h-screen flex flex-col items-center justify-start p-4 lg:p-8 space-y-16">
 
-  <main
-    class="w-full max-w-[1440px] bg-iceCreamPink rounded-[40px] p-8 lg:p-14 shadow-2xl relative overflow-hidden min-h-[700px] flex flex-col justify-between">
+  <main class="w-full max-w-[1440px] bg-iceCreamPink rounded-[40px] p-8 lg:p-14 shadow-2xl relative overflow-hidden min-h-[700px] flex flex-col justify-between flex-shrink-0">
 
-    <div
-      class="absolute left-1/2 top-[55%] -translate-x-1/2 -translate-y-1/2 w-[340px] h-[340px] sm:w-[500px] sm:h-[500px] lg:w-[680px] lg:h-[680px] bg-[#FF98B3] rounded-full pointer-events-none z-0">
+    <div class="absolute left-1/2 top-[55%] -translate-x-1/2 -translate-y-1/2 w-[340px] h-[340px] sm:w-[500px] sm:h-[500px] lg:w-[680px] lg:h-[680px] bg-[#FF98B3] rounded-full pointer-events-none z-0">
     </div>
 
     <header class="flex justify-between items-center mb-8 lg:mb-12 relative z-10 w-full">
@@ -49,11 +47,9 @@
       </nav>
 
       <div>
-        <button
-          class="bg-white text-berryRed font-black px-7 py-3.5 rounded-full flex items-center space-x-2 text-sm hover:bg-lightBerry transition-all shadow-md">
+        <button class="bg-white text-berryRed font-black px-7 py-3.5 rounded-full flex items-center space-x-2 text-sm hover:bg-lightBerry transition-all shadow-md">
           <span>Buy now</span>
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 stroke-[3]" fill="none" viewBox="0 0 24 24"
-            stroke="currentColor">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 stroke-[3]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
           </svg>
         </button>
@@ -64,39 +60,31 @@
 
       <div class="lg:col-span-4 space-y-8 flex flex-col justify-center order-1">
         <div class="space-y-1">
-          <h1
-            class="text-white font-black text-5xl lg:text-[55px] xl:text-[62px] uppercase leading-[0.95] tracking-wide">
+          <h1 class="text-white font-black text-5xl lg:text-[55px] xl:text-[62px] uppercase leading-[0.95] tracking-wide">
             Ice cream <br>made with</h1>
-          <h2
-            class="text-berryRed font-black text-6xl lg:text-[70px] xl:text-[80px] uppercase leading-[0.95] tracking-wider">
+          <h2 class="text-berryRed font-black text-6xl lg:text-[70px] xl:text-[80px] uppercase leading-[0.95] tracking-wider">
             Passion</h2>
         </div>
 
         <div class="flex items-center space-x-4">
-          <button
-            class="bg-berryRed text-white font-black px-8 py-3.5 rounded-full text-xs uppercase tracking-wider hover:bg-opacity-90 transition-all shadow-md">
+          <button class="bg-berryRed text-white font-black px-8 py-3.5 rounded-full text-xs uppercase tracking-wider hover:bg-opacity-90 transition-all shadow-md">
             Products</button>
-          <button
-            class="bg-white text-berryRed font-black px-8 py-3.5 rounded-full text-xs uppercase tracking-wider hover:bg-lightBerry transition-all shadow-md">
+          <button class="bg-white text-berryRed font-black px-8 py-3.5 rounded-full text-xs uppercase tracking-wider hover:bg-lightBerry transition-all shadow-md">
             How it's made?
           </button>
         </div>
 
         <div class="pt-4 flex items-end space-x-4 max-w-sm">
           <div class="relative flex-shrink-0">
-            <span
-              class="absolute -top-6 left-0 text-white font-black uppercase text-base leading-none tracking-tight">Bio<br>Eco</span>
+            <span class="absolute -top-6 left-0 text-white font-black uppercase text-base leading-none tracking-tight">Bio<br>Eco</span>
             <img src="./images/jug img.png" alt="Ice Cream Jug" class="w-20 h-auto object-contain drop-shadow-md mt-4">
           </div>
           <div class="space-y-2 pb-1">
             <p class="text-white text-[11px] leading-relaxed font-semibold opacity-90">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
-            <button
-              class="w-7 h-7 bg-white rounded-full flex items-center justify-center text-berryRed shadow-md hover:scale-110 transition-transform">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 stroke-[3]" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
+            <button class="w-7 h-7 bg-white rounded-full flex items-center justify-center text-berryRed shadow-md hover:scale-110 transition-transform">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 stroke-[3]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
               </svg>
             </button>
@@ -104,14 +92,12 @@
         </div>
       </div>
 
-      <div
-        class="lg:col-span-4 flex justify-center items-end relative h-full min-h-[350px] lg:min-h-[500px] order-2 lg:translate-y-10">
+      <div class="lg:col-span-4 flex justify-center items-end relative h-full min-h-[350px] lg:min-h-[500px] order-2 lg:translate-y-14">
         <img src="./images/icecream cone.png" alt="Stacked Ice Cream Cone"
-          class="w-full max-w-[280px] sm:max-w-[340px] lg:max-w-[400px] h-auto object-contain z-10 relative scale-[1.35] origin-bottom drop-shadow-[0_25px_25px_rgba(0,0,0,0.2)] hover:scale-[1.4] transition-transform duration-300">
+          class="w-full max-w-[280px] sm:max-w-[340px] lg:max-w-[420px] h-auto object-contain z-10 relative scale-[1.35] origin-bottom drop-shadow-[0_25px_25px_rgba(0,0,0,0.2)] hover:scale-[1.4] transition-transform duration-300">
       </div>
 
-      <div
-        class="lg:col-span-4 flex flex-col justify-between h-full space-y-12 lg:space-y-0 order-3 self-stretch lg:py-4">
+      <div class="lg:col-span-4 flex flex-col justify-between h-full space-y-12 lg:space-y-0 order-3 self-stretch lg:py-4 relative">
 
         <div class="space-y-8 w-full flex flex-col items-end lg:pr-4">
           <div class="text-right relative pr-3">
@@ -127,19 +113,89 @@
           </div>
         </div>
 
-        <div class="relative w-full flex justify-end h-[320px]">
-
-          <div class="absolute right-0 bottom-[-35px] lg:bottom-[-70px] z-10">
-            <img src="./images/Go girl.png" alt="Tasty Ice Cream" class="w-32 lg:w-80 h-auto object-contain">
+        <div class="absolute right-0 bottom-[-35px] lg:bottom-[-56px] w-[200px] sm:w-[300px] lg:w-[350px] h-[250px] sm:h-[350px] lg:h-[400px] z-10">
+          <div class="absolute right-0 bottom-0 w-32 lg:w-56 xl:w-64 h-auto overflow-visible z-10 relative">
+            <img src="./images/Soo Tasty.png" alt="Tasty Ice Cream" class="w-full h-full object-contain block">
+            
+            <div class="absolute right-[85%] lg:right-[78%] bottom-[68%] lg:bottom-[65%] z-20 drop-shadow-lg transform -rotate-6">
+              <div class="bg-white text-berryRed font-black text-[10px] sm:text-[11px] tracking-wider uppercase px-4 py-2 rounded-full whitespace-nowrap relative">
+                S00000O TASTY!
+                <div class="absolute right-6 bottom-[-6px] w-0 h-0 border-t-[8px] border-t-white border-r-[8px] border-r-transparent"></div>
+              </div>
+            </div>
           </div>
-
         </div>
 
       </div>
+    </div>
+  </main>
 
+  <section class="bg-white py-16 px-4 w-full max-w-[1440px] mx-auto flex-shrink-0">
+    
+    <div class="text-center mb-24">
+      <span class="text-[#FFAEC3] font-black uppercase text-xl tracking-widest block mb-2">100% Natural</span>
+      <h2 class="text-[#D11342] font-black text-4xl lg:text-5xl uppercase tracking-wider">
+        Products
+      </h2>
     </div>
 
-  </main>
-</body>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-y-24 md:gap-x-8 max-w-6xl mx-auto">
+      
+      <div class="bg-[#FFAEC3] rounded-[30px] pt-24 pb-8 px-6 text-center relative flex flex-col items-center shadow-lg">
+        <div class="absolute -top-20 w-40 h-40 bg-[#FF98B3] rounded-full flex items-center justify-center">
+          <img src="./images/Pr 1.png" alt="Ice Cream" class="w-[85%] h-[85%] object-contain drop-shadow-md">
+        </div>
+        
+        <h3 class="text-white font-black text-2xl uppercase tracking-wider mb-2">Ice Cream</h3>
+        <div class="text-white opacity-80 font-black tracking-widest mb-4">...</div>
+        <p class="text-white text-xs leading-relaxed font-semibold opacity-90 max-w-[240px] flex-grow mb-8">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo distinctio velit placeat similique ipsam minus, rem possimus ab, ea eius corrupti dignissimos quidem! Provident iusto accusantium dignissimos voluptatibus nesciunt ullam quod dolorem reiciendis sit dolorum, quasi nam accusamus, amet similique incidunt deserunt quaerat cumque voluptate eaque temporibus qui illo voluptatum! Similique, quaerat. 
+        </p>
+        
+        <button class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-[#D11342] shadow-md hover:scale-110 transition-transform mt-auto">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 stroke-[3]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+      </div>
 
+      <div class="bg-[#F0D3A9] rounded-[30px] pt-24 pb-8 px-6 text-center relative flex flex-col items-center shadow-md">
+        <div class="absolute -top-20 w-40 h-40 bg-[#E6C294] rounded-full flex items-center justify-center">
+          <img src="./images/Pr 2.png" alt="Ice Coffee" class="w-[85%] h-[85%] object-contain drop-shadow-md">
+        </div>
+        
+        <h3 class="text-white font-black text-2xl uppercase tracking-wider mb-2">Ice Coffee</h3>
+        <div class="text-white opacity-80 font-black tracking-widest mb-4">...</div>
+        <p class="text-white text-xs leading-relaxed font-semibold opacity-90 max-w-[240px] flex-grow mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo distinctio velit placeat similique ipsam minus, rem possimus ab, ea eius corrupti dignissimos quidem! Provident iusto accusantium dignissimos voluptatibus nesciunt ullam quod dolorem reiciendis sit dolorum, quasi nam accusamus, amet similique incidunt deserunt quaerat cumque voluptate eaque temporibus qui illo voluptatum! Similique, quaerat. 
+        </p>
+        
+        <button class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-[#D11342] shadow-md hover:scale-110 transition-transform mt-auto">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 stroke-[3]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="bg-[#C2E79B] rounded-[30px] pt-24 pb-8 px-6 text-center relative flex flex-col items-center shadow-md">
+        <div class="absolute -top-20 w-40 h-40 bg-[#B2DA87] rounded-full flex items-center justify-center">
+          <img src="./images/Pr 3.png" alt="Milkshakes" class="w-[85%] h-[85%] object-contain drop-shadow-md">
+        </div>
+        
+        <h3 class="text-white font-black text-2xl uppercase tracking-wider mb-2">Milkshakes</h3>
+        <div class="text-white opacity-80 font-black tracking-widest mb-4">...</div>
+        <p class="text-white text-xs leading-relaxed font-semibold opacity-90 max-w-[240px] flex-grow mb-8">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo distinctio velit placeat similique ipsam minus, rem possimus ab, ea eius corrupti dignissimos quidem! Provident iusto accusantium dignissimos voluptatibus nesciunt ullam quod dolorem reiciendis sit dolorum, quasi nam accusamus, amet similique incidunt deserunt quaerat cumque voluptate eaque temporibus qui illo voluptatum! Similique, quaerat. 
+        </p>
+        
+        <button class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-[#D11342] shadow-md hover:scale-110 transition-transform mt-auto">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 stroke-[3]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+</body>
 </html>
