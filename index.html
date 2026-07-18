@@ -25,17 +25,13 @@
 </head>
 
 <body class="bg-white min-h-screen flex flex-col items-center justify-start space-y-16">
-  <!-- Main Hero Section (Now Full Width Edge-to-Edge) -->
   <main class="w-full bg-iceCreamPink relative overflow-hidden min-h-[700px] lg:min-h-[800px] flex flex-col justify-between p-8 lg:p-14 pb-0 lg:pb-0">
 
-    <!-- Big Background Circle Position Adjustments -->
     <div class="absolute left-1/2 top-[55%] -translate-x-1/2 -translate-y-1/2 w-[340px] h-[340px] sm:w-[500px] sm:h-[500px] lg:w-[750px] lg:h-[750px] bg-[#FF98B3] rounded-full pointer-events-none z-0">
     </div>
 
-    <!-- Centered Content Wrapper to keep inner content clean -->
     <div class="w-full max-w-[1280px] mx-auto flex flex-col justify-between flex-grow relative z-10">
       
-      <!-- [Aapka Header Section Yahan Aayega] -->
       <header class="flex justify-between items-center mb-8 lg:mb-12 w-full">
         <div class="flex items-center space-x-2">
         <img src="./images/icecream page logo.png" alt="Ice Cream Logo" class="w-10 h-10 object-contain">
@@ -57,13 +53,80 @@
             <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
           </svg>
         </button>
+         </div>
       </header>
 
-      <!-- [Aapka Grid Content Section Yahan Aayega] -->
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-y-12 lg:gap-x-6 items-center flex-grow">
-        <!-- ... grid inner elements same rahenge ... -->
+        <div class="lg:col-span-4 space-y-8 flex flex-col justify-center order-1">
+        <div class="space-y-1">
+          <h1 class="text-white font-black text-5xl lg:text-[55px] xl:text-[62px] uppercase leading-[0.95] tracking-wide">
+            Ice cream <br>made with</h1>
+          <h2 class="text-berryRed font-black text-6xl lg:text-[70px] xl:text-[80px] uppercase leading-[0.95] tracking-wider">
+            Passion</h2>
+        </div>
+
+        <div class="flex items-center space-x-4">
+          <button class="bg-berryRed text-white font-black px-8 py-3.5 rounded-full text-xs uppercase tracking-wider hover:bg-opacity-90 transition-all shadow-md">
+            Products</button>
+          <button class="bg-white text-berryRed font-black px-8 py-3.5 rounded-full text-xs uppercase tracking-wider hover:bg-lightBerry transition-all shadow-md">
+            How it's made?
+          </button>
+        </div>
+
+        <div class="pt-4 flex items-end space-x-4 max-w-sm">
+          <div class="relative flex-shrink-0">
+            <span class="absolute -top-6 left-0 text-white font-black uppercase text-base leading-none tracking-tight">Bio<br>Eco</span>
+            <img src="./images/jug img.png" alt="Ice Cream Jug" class="w-20 h-auto object-contain drop-shadow-md mt-4">
+          </div>
+          <div class="space-y-2 pb-1">
+            <p class="text-white text-[11px] leading-relaxed font-semibold opacity-90">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <button class="w-7 h-7 bg-white rounded-full flex items-center justify-center text-berryRed shadow-md hover:scale-110 transition-transform">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 stroke-[3]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
 
+      <div class="lg:col-span-4 flex justify-center items-end relative h-full min-h-[350px] lg:min-h-[500px] order-2 lg:translate-y-14">
+        <img src="./images/icecream cone.png" alt="Stacked Ice Cream Cone"
+          class="w-full max-w-[280px] sm:max-w-[340px] lg:max-w-[420px] h-auto object-contain z-10 relative scale-[1.35] origin-bottom drop-shadow-[0_25px_25px_rgba(0,0,0,0.2)] hover:scale-[1.4] transition-transform duration-300">
+      </div>
+
+      <div class="lg:col-span-4 flex flex-col justify-between h-full space-y-12 lg:space-y-0 order-3 self-stretch lg:py-4 relative">
+
+        <div class="space-y-8 w-full flex flex-col items-end lg:pr-4">
+          <div class="text-right relative pr-3">
+            <span class="absolute -right-1 top-0 w-8 h-8 bg-white bg-opacity-30 rounded-full z-0"></span>
+            <div class="text-berryRed font-black text-5xl lg:text-6xl leading-none relative z-10">16</div>
+            <div class="text-white text-[11px] font-bold uppercase tracking-widest mt-1">Cafes</div>
+          </div>
+
+          <div class="text-right relative pr-3">
+            <span class="absolute -right-1 top-0 w-8 h-8 bg-white bg-opacity-30 rounded-full z-0"></span>
+            <div class="text-berryRed font-black text-5xl lg:text-6xl leading-none relative z-10">23</div>
+            <div class="text-white text-[11px] font-bold uppercase tracking-widest mt-1">Food Trucks</div>
+          </div>
+        </div>
+
+        <div class="absolute right-[20px] lg:right-[40px] xl:right-[60px] bottom-[-35px] lg:bottom-[-56px] w-[200px] sm:w-[300px] lg:w-[350px] h-[250px] sm:h-[350px] lg:h-[400px] z-10">
+        <div class="absolute right-0 bottom-0 w-32 lg:w-56 xl:w-64 h-auto overflow-visible z-10">
+            <img src="./images/Soo Tasty.png" alt="Tasty Ice Cream" class="w-full h-full object-contain block">
+          </div>
+          <div class="absolute right-[90px] sm:right-[160px] lg:right-[68px] bottom-[140px] sm:bottom-[230px] lg:bottom-[150px] z-20 drop-shadow-lg transform -rotate-6">
+            <div class="bg-white text-berryRed font-black text-[10px] sm:text-[11px] tracking-wider uppercase px-4 py-2 rounded-full whitespace-nowrap relative">
+              S00000O TASTY!
+              <div class="absolute right-6 bottom-[-6px] w-0 h-0 border-t-[8px] border-t-white border-r-[8px] border-r-transparent"></div>
+            </div>
+          </div>
+
+        </div>
+        </div>
+
+      </div>
     </div>
   </main>
 <!-- Products Section -->
