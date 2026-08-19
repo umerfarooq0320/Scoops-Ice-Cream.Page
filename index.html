@@ -63,12 +63,12 @@
             </svg>
           </button>
 
-          <!-- 3. Small (<768px) & Medium (>=768px): Three Lines (Hamburger) | Large (>=1024px): Hidden -->
-          <button class="flex flex-col justify-center space-y-1.5 lg:hidden focus:outline-none cursor-pointer">
-            <span class="block w-6 h-0.5 bg-berryRed rounded-full"></span>
-            <span class="block w-6 h-0.5 bg-berryRed rounded-full"></span>
-            <span class="block w-6 h-0.5 bg-berryRed rounded-full"></span>
-          </button>
+          <!-- Three Lines Hamburger Button -->
+<button id="menu-btn" class="flex flex-col justify-center space-y-1.5 lg:hidden focus:outline-none cursor-pointer z-20">
+  <span class="block w-6 h-0.5 bg-berryRed rounded-full"></span>
+  <span class="block w-6 h-0.5 bg-berryRed rounded-full"></span>
+  <span class="block w-6 h-0.5 bg-berryRed rounded-full"></span>
+</button>
 
         </div>
       </header>
@@ -533,5 +533,38 @@
 
   </footer>
 
+  <!-- ================= Mobile Sliding Navigation Drawer ================= -->
+<div id="mobile-menu" class="fixed inset-y-0 right-0 w-[260px] sm:w-[300px] bg-[#DE6B87] z-50 transform translate-x-full transition-transform duration-300 ease-in-out p-6 flex flex-col shadow-2xl lg:hidden">
+  
+  <!-- Close Button (X) -->
+  <div class="flex justify-end">
+    <button id="close-btn" class="text-white hover:text-berryRed text-3xl font-light focus:outline-none cursor-pointer">
+      &times;
+    </button>
+  </div>
+
+  <!-- Buy Now Button -->
+  <div class="mt-6 mb-10 w-full">
+    <button class="w-full bg-white text-berryRed font-black py-3.5 px-6 rounded-full flex items-center justify-center space-x-2 text-sm hover:bg-lightBerry transition-all shadow-md">
+      <span>Buy now</span>
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 stroke-[3]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Navigation Links -->
+  <nav class="flex flex-col space-y-6 font-bold text-sm tracking-wide">
+    <a href="#" class="mobile-link text-berryRed hover:opacity-80 transition-colors">Home</a>
+    <a href="#" class="mobile-link text-white hover:text-berryRed transition-colors">About us</a>
+    <a href="#" class="mobile-link text-white hover:text-berryRed transition-colors">How it's made?</a>
+    <a href="#" class="mobile-link text-white hover:text-berryRed transition-colors">Our products</a>
+    <a href="#" class="mobile-link text-white hover:text-berryRed transition-colors">Contact</a>
+  </nav>
+
+</div>
+
+<!-- Backdrop Overlay -->
+<div id="menu-overlay" class="fixed inset-0 bg-black/40 z-40 hidden lg:hidden backdrop-blur-sm transition-opacity"></div>
 </body>
 </html>
