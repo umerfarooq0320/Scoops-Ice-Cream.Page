@@ -77,45 +77,52 @@
       <!-- Hero Grid Layout -->
       <div class="relative flex-grow flex items-center md:grid md:grid-cols-12 md:gap-x-4 lg:gap-x-6">
         
-        <!-- Left Content -->
-        <div class="w-full md:w-auto md:col-span-4 space-y-4 md:space-y-6 lg:space-y-8 flex flex-col justify-center z-20 pb-12 md:pb-0">
-          <div class="space-y-1">
-            <h1 class="text-white font-black text-2xl sm:text-3xl md:text-[34px] lg:text-[55px] xl:text-[62px] uppercase leading-[0.95] tracking-wide">
-              Ice cream <br>made with
-            </h1>
-            <h2 class="text-berryRed font-black text-3xl sm:text-4xl md:text-[44px] lg:text-[70px] xl:text-[80px] uppercase leading-[0.95] tracking-wider">
-              Passion
-            </h2>
-          </div>
+       <!-- Left Column: Title & CTA Buttons -->
+<div class="w-full md:w-auto md:col-span-4 space-y-6 md:space-y-6 lg:space-y-8 flex flex-col justify-center z-20 pb-12 md:pb-0">
+<!-- Title Block (Exact Tight Proportional Gap) -->
+<div class="flex flex-col select-none">
+  
+  <!-- White Text -->
+  <h1 class="text-white font-black text-3xl sm:text-4xl md:text-5xl lg:text-[54px] xl:text-[60px] uppercase tracking-wide leading-[0.92]">
+    Ice cream <br>made with
+  </h1>
 
-          <!-- CTA Buttons -->
-          <div class="flex items-center space-x-2 sm:space-x-3 md:space-x-4">
-            <button class="bg-berryRed text-white font-black px-4 sm:px-5 md:px-6 lg:px-8 py-2 md:py-3 lg:py-3.5 rounded-full text-[9px] sm:text-[10px] md:text-xs uppercase tracking-wider hover:bg-opacity-90 transition-all shadow-md">
-              Products
-            </button>
-            <button class="bg-white text-berryRed font-black px-4 sm:px-5 md:px-6 lg:px-8 py-2 md:py-3 lg:py-3.5 rounded-full text-[9px] sm:text-[10px] md:text-xs uppercase tracking-wider hover:bg-lightBerry transition-all shadow-md">
-              How it's made?
-            </button>
-          </div>
+  <!-- Passion (Aligned with subtle top offset) -->
+  <h2 class="text-berryRed font-black text-4xl sm:text-5xl md:text-6xl lg:text-[70px] xl:text-[82px] uppercase tracking-wider leading-[0.92] mt-1 lg:mt-1.5">
+    Passion
+  </h2>
 
-          <!-- Bio Eco Box (Hidden on Mobile 320px, Visible on Tablet 768px & Desktop 1000px+) -->
-          <div class="hidden md:flex items-end space-x-3 md:space-x-4 max-w-sm pt-2 md:pt-4">
-            <div class="relative flex-shrink-0">
-              <span class="absolute -top-5 md:-top-6 left-0 text-white font-black uppercase text-xs md:text-base leading-none tracking-tight">Bio<br>Eco</span>
-              <img src="./images/jug img.png" alt="Ice Cream Jug" class="w-14 md:w-16 lg:w-20 h-auto object-contain drop-shadow-md mt-3 md:mt-4">
-            </div>
-            <div class="space-y-1.5 md:space-y-2 pb-1">
-              <p class="text-white text-[9px] md:text-[10px] lg:text-[11px] leading-relaxed font-semibold opacity-90">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.
-              </p>
-              <button class="w-6 h-6 md:w-7 md:h-7 bg-white rounded-full flex items-center justify-center text-berryRed shadow-md hover:scale-110 transition-transform">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-2.5 w-2.5 md:h-3 md:w-3 stroke-[3]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-                </svg>
-              </button>
-            </div>
-          </div>
-        </div>
+</div>
+
+  <!-- CTA Buttons -->
+  <div class="flex items-center space-x-2 sm:space-x-3 md:space-x-4">
+    <button class="bg-berryRed text-white font-black px-4 sm:px-5 md:px-6 lg:px-8 py-2 md:py-3 lg:py-3.5 rounded-full text-[9px] sm:text-[10px] md:text-xs uppercase tracking-wider hover:bg-opacity-90 transition-all shadow-md">
+      Products
+    </button>
+    <button class="bg-white text-berryRed font-black px-4 sm:px-5 md:px-6 lg:px-8 py-2 md:py-3 lg:py-3.5 rounded-full text-[9px] sm:text-[10px] md:text-xs uppercase tracking-wider hover:bg-lightBerry transition-all shadow-md">
+      How it's made?
+    </button>
+  </div>
+
+  <!-- Bio Eco Box -->
+  <div class="hidden md:flex items-end space-x-3 md:space-x-4 max-w-sm pt-2 md:pt-4">
+    <div class="relative flex-shrink-0">
+      <span class="absolute -top-5 md:-top-6 left-0 text-white font-black uppercase text-xs md:text-base leading-none tracking-tight">Bio<br>Eco</span>
+      <img src="./images/jug img.png" alt="Ice Cream Jug" class="w-14 md:w-16 lg:w-20 h-auto object-contain drop-shadow-md mt-3 md:mt-4">
+    </div>
+    <div class="space-y-1.5 md:space-y-2 pb-1">
+      <p class="text-white text-[9px] md:text-[10px] lg:text-[11px] leading-relaxed font-semibold opacity-90">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.
+      </p>
+      <button class="w-6 h-6 md:w-7 md:h-7 bg-white rounded-full flex items-center justify-center text-berryRed shadow-md hover:scale-110 transition-transform">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-2.5 w-2.5 md:h-3 md:w-3 stroke-[3]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+</div>
 
         <!-- Center Cone (Background layer on mobile, centered grid item on md/lg) -->
         <div class="absolute right-[-10px] bottom-0 md:static md:col-span-4 flex justify-center items-end h-full z-10 md:translate-y-8 lg:translate-y-14">
