@@ -123,10 +123,10 @@ Made with fresh, natural ingredients and a passion for great taste, every scoop 
 
 </div>
 
-        <!-- Center Cone (Background layer on mobile, centered grid item on md/lg) -->
-        <div class="absolute right-[-10px] bottom-0 md:static md:col-span-4 flex justify-center items-end h-full z-10 md:translate-y-8 lg:translate-y-14">
-          <img src="./images/icecream cone.png" alt="Stacked Ice Cream Cone"
-            class="w-[180px] sm:w-[220px] md:w-full md:max-w-[280px] lg:max-w-[420px] h-auto object-contain scale-[1.15] md:scale-[1.25] lg:scale-[1.35] origin-bottom drop-shadow-[0_15px_15px_rgba(0,0,0,0.15)] md:drop-shadow-[0_25px_25px_rgba(0,0,0,0.2)]">
+        <!-- Center Cone (Fixed Height & Perfect Centering) -->
+        <div class="absolute right-[-10px] bottom-0 md:static md:col-span-4 flex justify-center items-end h-full z-10 pointer-events-none md:translate-y-4 lg:translate-y-6">
+          <img src="./images/ice cream cone.png" alt="Stacked Ice Cream Cone"
+            class="h-[380px] sm:h-[460px] md:h-[500px] lg:h-[620px] xl:h-[680px] w-auto max-w-none object-contain object-bottom drop-shadow-[0_25px_30px_rgba(0,0,0,0.18)]">
         </div>
 
         <!-- Right Side: Stats & SOOOOO TASTY Badge (Hidden on Mobile 320px, Visible on Tablet 768px & Desktop 1000px+) -->
@@ -147,17 +147,29 @@ Made with fresh, natural ingredients and a passion for great taste, every scoop 
             </div>
           </div>
 
-          <!-- Bottom Right Tasty Girl Badge -->
-          <div class="absolute right-[10px] md:right-[20px] lg:right-[40px] xl:right-[60px] bottom-[-25px] md:bottom-[-35px] lg:bottom-[-56px] w-[180px] md:w-[240px] lg:w-[350px] h-[220px] md:h-[280px] lg:h-[400px] z-10 pointer-events-none">
-            <div class="absolute right-0 bottom-0 w-28 md:w-36 lg:w-56 xl:w-64 h-auto overflow-visible z-10">
-              <img src="./images/Soo Tasty.png" alt="Tasty Ice Cream" class="w-full h-full object-contain block">
-            </div>
-            <div class="absolute right-[60px] md:right-[80px] lg:right-[68px] bottom-[110px] md:bottom-[150px] lg:bottom-[150px] z-20 drop-shadow-lg transform -rotate-6">
-              <div class="bg-white text-berryRed font-black text-[9px] md:text-[10px] lg:text-[11px] tracking-wider uppercase px-3 md:px-4 py-1.5 md:py-2 rounded-full whitespace-nowrap relative">
-                S00000O TASTY!
-                <div class="absolute right-5 bottom-[-5px] w-0 h-0 border-t-[6px] md:border-t-[8px] border-t-white border-r-[6px] md:border-r-[8px] border-r-transparent"></div>
+         <!-- Bottom Right: Girl Picture & SOOOOOO TASTY Speech Bubble -->
+          <div class="relative w-full flex flex-col items-end mt-auto pointer-events-none">
+            
+            <!-- Speech Bubble (Cloud Style with Tail) -->
+            <div class="relative -mr-2 sm:mr-4 lg:mr-10 -mb-3 sm:-mb-4 z-30 drop-shadow-md">
+              <div class="bg-white text-berryRed font-black text-[10px] sm:text-xs lg:text-sm tracking-wider uppercase px-4 sm:px-5 py-2 sm:py-2.5 rounded-full whitespace-nowrap relative shadow-sm border border-pink-50">
+                SOOOOOO TASTY!
+                <!-- Bubble Tail -->
+                <div class="absolute right-4 sm:right-6 -bottom-1.5 w-3 h-3 bg-white rotate-45 border-r border-b border-pink-50"></div>
               </div>
             </div>
+
+            <!-- Girl Image with Pink Halo Background -->
+            <div class="relative w-36 sm:w-44 md:w-48 lg:w-64 xl:w-72 h-auto flex items-end justify-end">
+              <!-- Soft Pink Halo -->
+              <div class="absolute inset-0 bg-[#FF98B3]/60 rounded-full blur-md scale-95 -z-10 translate-y-4"></div>
+              
+              <img 
+                src="./images/Soo Tasty.png" 
+                alt="Girl eating ice cream" 
+                class="w-full h-auto object-contain block drop-shadow-lg">
+            </div>
+
           </div>
 
         </div>
