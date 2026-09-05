@@ -147,30 +147,31 @@ Made with fresh, natural ingredients and a passion for great taste, every scoop 
             </div>
           </div>
 
-         <!-- Bottom Right: Girl Picture & SOOOOOO TASTY Speech Bubble -->
-          <div class="relative w-full flex flex-col items-end mt-auto pointer-events-none">
-            
-            <!-- Speech Bubble (Cloud Style with Tail) -->
-            <div class="relative -mr-2 sm:mr-4 lg:mr-10 -mb-3 sm:-mb-4 z-30 drop-shadow-md">
-              <div class="bg-white text-berryRed font-black text-[10px] sm:text-xs lg:text-sm tracking-wider uppercase px-4 sm:px-5 py-2 sm:py-2.5 rounded-full whitespace-nowrap relative shadow-sm border border-pink-50">
-                SOOOOOOOO TASTY!
-                <!-- Bubble Tail -->
-                <div class="absolute right-4 sm:right-6 -bottom-1.5 w-3 h-3 bg-white rotate-45 border-r border-b border-pink-50"></div>
-              </div>
-            </div>
+         <!-- Bottom Right: Girl Picture & Speech Bubble (Pinned to Bottom Edge) -->
+<div class="absolute right-4 sm:right-6 lg:right-10 bottom-0 flex flex-col items-end pointer-events-none z-20">
+  
+  <!-- "SOOOOOOOO TASTY!" Speech Bubble -->
+  <div class="mr-4 sm:mr-6 lg:mr-8 mb-1 z-30 drop-shadow-md transform -rotate-2">
+    <div class="bg-white text-berryRed font-black text-[10px] sm:text-[11px] lg:text-xs tracking-wider uppercase px-4 py-2 rounded-full whitespace-nowrap relative shadow-sm border border-pink-50">
+      SOOOOOOOO TASTY!
+      <!-- Bubble Tail -->
+      <div class="absolute right-6 -bottom-1.5 w-3 h-3 bg-white rotate-45 border-r border-b border-pink-50"></div>
+    </div>
+  </div>
 
-            <!-- Girl Image with Pink Halo Background -->
-            <div class="relative w-36 sm:w-44 md:w-48 lg:w-64 xl:w-72 h-auto flex items-end justify-end">
-              <!-- Soft Pink Halo -->
-              <div class="absolute inset-0 bg-[#FF98B3]/60 rounded-full blur-md scale-95 -z-10 translate-y-4"></div>
-              
-              <img 
-                src="./images/Soo Tasty.png" 
-                alt="Girl eating ice cream" 
-                class="w-full h-auto object-contain block drop-shadow-lg">
-            </div>
+  <!-- Girl Image Container (Flush to exact bottom) -->
+  <div class="relative w-32 sm:w-40 md:w-48 lg:w-56 h-auto flex items-end justify-end">
+    <!-- Pink Glow Halo -->
+    <div class="absolute inset-0 bg-[#FF98B3]/50 rounded-full blur-md scale-90 -z-10 translate-y-2"></div>
+    
+    <!-- Cutout Image anchored at bottom border -->
+    <img 
+      src="./images/Soo Tasty.png" 
+      alt="Girl eating ice cream" 
+      class="w-full h-auto object-contain block align-bottom m-0 p-0 drop-shadow-lg">
+  </div>
 
-          </div>
+</div>
 
         </div>
 
