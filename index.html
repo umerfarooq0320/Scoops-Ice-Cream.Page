@@ -179,29 +179,32 @@ Made with fresh, natural ingredients and a passion for great taste, every scoop 
     </div>
   </main>
 
-  <!-- ================= Products Section ================= -->
-  <section class="bg-white py-16 px-4 w-full max-w-[1440px] mx-auto flex-shrink-0">
+  <!-- ================= Products Section (Pop-out 3D Overflow Effect) ================= -->
+  <section class="bg-white py-20 px-4 w-full max-w-[1440px] mx-auto flex-shrink-0">
     
-    <div class="text-center mb-24">
-      <span class="text-[#FFAEC3] font-black uppercase text-xl tracking-widest block mb-2">100% Natural</span>
+    <!-- Title -->
+    <div class="text-center mb-32">
+      <span class="text-[#FFAEC3] font-black uppercase text-lg sm:text-xl tracking-widest block mb-2">100% Natural</span>
       <h2 class="text-[#D11342] font-black text-4xl lg:text-5xl uppercase tracking-wider">
         Products
       </h2>
     </div>
 
-    <!-- Product Cards Grid (1 col on 320px, 3 cols on 768px & 1000px+) -->
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-y-24 md:gap-x-8 max-w-6xl mx-auto">
+    <!-- Product Cards Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-y-36 md:gap-x-8 max-w-6xl mx-auto">
       
-      <!-- Card 1 -->
-      <div class="bg-[#FFAEC3] rounded-[30px] pt-24 pb-8 px-6 text-center relative flex flex-col items-center shadow-lg">
-        <div class="absolute -top-20 w-40 h-40 bg-[#FF98B3] rounded-full flex items-center justify-center">
-          <img src="./images/Pr 1.png" alt="Ice Cream" class="w-[85%] h-[85%] object-contain drop-shadow-md">
+      <!-- Card 1: Ice Cream -->
+      <div class="bg-[#FFAEC3] rounded-[30px] pt-28 pb-8 px-6 text-center relative flex flex-col items-center shadow-lg">
+        <!-- Floating Circle + Oversized Pop-out Image -->
+        <div class="absolute -top-24 w-44 h-44 sm:w-48 sm:h-48 bg-[#FF98B3] rounded-full flex items-center justify-center pointer-events-none">
+          <img src="./images/Pr 1.png" alt="Ice Cream" 
+            class="w-auto h-56 sm:h-64 object-contain -translate-y-4 scale-110 drop-shadow-[0_15px_15px_rgba(0,0,0,0.18)]">
         </div>
         
         <h3 class="text-white font-black text-2xl uppercase tracking-wider mb-2">Ice Cream</h3>
         <div class="text-white opacity-80 font-black tracking-widest mb-4">...</div>
         <p class="text-white text-xs leading-relaxed font-semibold opacity-90 max-w-[240px] flex-grow mb-8">
-          Our ice cream is made with the finest ingredients to deliver a rich, creamy, and unforgettable flavor in every scoop. We carefully blend fresh milk, natural flavors, and premium quality ingredients to create a smooth texture that melts perfectly in your mouth.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
         </p>
         
         <button class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-[#D11342] shadow-md hover:scale-110 transition-transform mt-auto">
@@ -210,7 +213,7 @@ Made with fresh, natural ingredients and a passion for great taste, every scoop 
           </svg>
         </button>
       </div>
-
+      
       <!-- Card 2 -->
       <div class="bg-[#F0D3A9] rounded-[30px] pt-24 pb-8 px-6 text-center relative flex flex-col items-center shadow-md">
         <div class="absolute -top-20 w-40 h-40 bg-[#E6C294] rounded-full flex items-center justify-center">
