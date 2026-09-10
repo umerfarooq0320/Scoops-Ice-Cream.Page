@@ -6,6 +6,11 @@
   <title>FrostByte - Ice Cream</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800;900&display=swap" rel="stylesheet">
+  
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+  
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
   <script>
     tailwind.config = {
       theme: {
@@ -55,7 +60,8 @@
 
         <!-- Right Side Controls -->
         <div class="flex items-center space-x-4 md:space-x-6">
-          
+          <!-- Yeh wo jagah hai kahan React apna jadu dikhayega -->
+           <div id="react-button-root"></div>
           <!-- 2. Medium (>=768px) & Large (>=1024px): Buy Now Button | Small (<768px): Hidden -->
           <button class="hidden md:flex bg-white text-berryRed font-black px-6 lg:px-7 py-3 lg:py-3.5 rounded-full items-center space-x-2 text-xs md:text-sm hover:bg-lightBerry transition-all shadow-md">
             <span>Buy now</span>
@@ -63,7 +69,8 @@
               <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
             </svg>
           </button>
-
+          <!-- Yeh wo jagah hai kahan React apna jadu dikhayega -->
+           <div id="react-button-root"></div>
           <!-- Three Lines Hamburger Button -->
 <button id="menu-btn" class="flex flex-col justify-center space-y-1.5 lg:hidden focus:outline-none cursor-pointer z-20">
   <span class="block w-6 h-0.5 bg-berryRed rounded-full"></span>
@@ -96,6 +103,8 @@
 
   <!-- CTA Buttons -->
   <div class="flex items-center space-x-2 sm:space-x-3 md:space-x-4">
+    <!-- Yeh wo jagah hai kahan React apna jadu dikhayega -->
+           <div id="react-button-root"></div>
     <button class="bg-berryRed text-white font-black px-4 sm:px-5 md:px-6 lg:px-8 py-2 md:py-3 lg:py-3.5 rounded-full text-[9px] sm:text-[10px] md:text-xs uppercase tracking-wider hover:bg-opacity-90 transition-all shadow-md">
       Products
     </button>
@@ -113,7 +122,9 @@
     <div class="space-y-1.5 md:space-y-2 pb-1">
       <p class="text-white text-[9px] md:text-[10px] lg:text-[11px] leading-relaxed font-semibold opacity-90">
 Made with fresh, natural ingredients and a passion for great taste, every scoop is creamy, delicious, and crafted to make your day a little sweeter.      </p>
-      <button class="w-6 h-6 md:w-7 md:h-7 bg-white rounded-full flex items-center justify-center text-berryRed shadow-md hover:scale-110 transition-transform">
+      <!-- Yeh wo jagah hai kahan React apna jadu dikhayega -->
+           <div id="react-button-root"></div>
+<button class="w-6 h-6 md:w-7 md:h-7 bg-white rounded-full flex items-center justify-center text-berryRed shadow-md hover:scale-110 transition-transform">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-2.5 w-2.5 md:h-3 md:w-3 stroke-[3]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
         </svg>
