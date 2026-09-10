@@ -654,5 +654,27 @@ Made with fresh, natural ingredients and a passion for great taste, every scoop 
 <!-- Backdrop Overlay -->
 <div id="menu-overlay" class="fixed inset-0 bg-black/40 z-40 hidden lg:hidden backdrop-blur-sm transition-opacity"></div>
 <script src="script.js"></script>
+<script type="text/babel">
+  // 1. React Component Banana
+  function InteractiveButton() {
+    // State: Check karega button click hua ya nahi
+    const [clicked, setClicked] = React.useState(false);
+
+    return (
+      <button 
+        onClick={() => setClicked(!clicked)}
+        className={`font-black px-6 py-3.5 rounded-full text-xs uppercase tracking-wider transition-all shadow-md mt-4 
+          ${clicked ? 'bg-[#C2E79B] text-gray-900' : 'bg-white text-[#D11342] border border-[#FFAEC3]'}`}
+      >
+        {clicked ? 'Added to Cart 🍦' : 'Buy Ice Cream Now'}
+      </button>
+    );
+  }
+
+  // 2. Component ko HTML wale khali div mein daalna
+  const rootElement = document.getElementById('react-button-root');
+  const root = ReactDOM.createRoot(rootElement);
+  root.render(<InteractiveButton />);
+</script>
 </body>
 </html>
