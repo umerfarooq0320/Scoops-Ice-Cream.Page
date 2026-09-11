@@ -1,4 +1,5 @@
 🍦 FrostByte — Artisanal Ice Cream Landing Page
+
 A vibrant, pixel-perfect, responsive landing page crafted for FrostByte Ice Cream, featuring playful aesthetics, structured typography, and dynamic interactive elements.
 
 📸 Preview
