@@ -35,7 +35,7 @@ frostbyte/
 No build tools or Node.js environment required to run this project locally.
 
 Clone the repository:
-git clone https://github.com/umerfarooq0320/Scoops-Ice-Cream-landing-page.git
+git clone https://github.com/umerfarooq0320/Scoops-Ice-Cream.Page/tree/main
 
 Navigate to the project directory:
 cd frostbyte-landing-page
